@@ -39,13 +39,11 @@ public class oblig1 {
                 mv=d[i];
 
             }
-     for(int j=0;j<d.length;j++){
-         f[j]=d[m];
-     }
+
         }
         System.out.println("den maksverden er:"+mv);
         System.out.println("tabellen verdier byttet "+ count + " " +"gange/r");
-        System.out.println(m);
+
 
     }
     public static  void ombyttinger(int[] d,int m,int i){
