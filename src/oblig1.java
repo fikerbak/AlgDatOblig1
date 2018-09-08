@@ -89,3 +89,19 @@ public class oblig1 {
 
 
 
+// oppgave 6 
+
+
+public static void rotasjon(char[] a, int k) {
+
+        char[] b = new char[a.length];
+        for (int i = 0; i < a.length; i++) {
+            b[(i + k) % a.length] = a[i];
+        }
+        for (int i = 0; i < a.length; i++) {
+            a[i] = b[i];
+        }
+    }
+}
+
+
