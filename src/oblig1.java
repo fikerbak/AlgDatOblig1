@@ -89,3 +89,5 @@ public class oblig1 {
 
 
 
+// oppgave 6 
+
