@@ -67,12 +67,25 @@ public class oblig1 {
     }
 
 
-
-
-
-
-
 }
+
+
+
+// oppgave 5
+
+
+    public static void rotasjon(char[] a) {
+
+        for (int i = 0; i < a.length; i++) {
+            char temp = a[i];
+            a[i] = a[a.length - 1];
+            a[a.length - 1] = temp;
+
+
+        }
+
+
+    }
 
 
 
