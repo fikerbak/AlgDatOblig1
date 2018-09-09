@@ -5,14 +5,12 @@ public class oblig1 {
         char[] a = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J'};
         char[] b = oblig1.rotasjon(a);
         int [] c={31,30,11,10,20,5,8};// tabellen til oppgave1
-        String n="ckib";//det første ord for oppgave10
-        String m="smbckkb";// det andre ord for oppgave10;
+
 
         System.out.println(" Tabellen verdier byttet"+" "+ombyttinger(c)+" "+"gang/er");
         System.out.println(" Den maks verdien er:"+maks(c));
 
         System.out.println(b);
-        System.out.println(innhold(n,m));// det skriver ut true eller false
     }
 
 /* dette er oppgave1 av andre versjon*/
@@ -68,29 +66,7 @@ public class oblig1 {
         return a ;
     }
 
-// dette er oppgave10
-    public  static boolean innhold(String n,String m) {
-        boolean x = false;
 
-        int k = 0;
-        char[] ord1 = n.toCharArray();
-        char[] ord2 = m.toCharArray();
-
-        for( int i=0;i< ord1.length;i++) {
-
-           for(int j=0;j<ord2.length;j++){
-               if(ord1[i]==ord2[j]) {
-                   k++;
-               break;
-               }
-           }
-
-        }
-        if (k == ord1.length)
-            x=true;
-
-        return x;
-    }
 
 
 
