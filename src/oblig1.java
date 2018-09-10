@@ -5,7 +5,7 @@ public class oblig1 {
         char[] a = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J'};
         char[] b = oblig1.rotasjon(a);
         int [] c={31,30,11,10,20,5,8};// tabellen til oppgave1
-        String n="ckib";//det første ord for oppgave10
+        String n="ckkbbb";//det første ord for oppgave10
         String m="smbckkb";// det andre ord for oppgave10;
 
         System.out.println(" Tabellen verdier byttet"+" "+ombyttinger(c)+" "+"gang/er");
@@ -80,6 +80,7 @@ public class oblig1 {
             for(int j=0;j<ord2.length;j++){
                 if(ord1[i]==ord2[j]) {
                     k++;
+                   ord2[j]=0;
                     break;
                 }
             }
