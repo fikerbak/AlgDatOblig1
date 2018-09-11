@@ -79,7 +79,7 @@ public class oblig1 {
     }
 
 
-
+// oppgave 5
 
     public static char[] rotasjon(char[] a){
 
@@ -90,6 +90,42 @@ public class oblig1 {
         }
         return a ;
     }
+
+
+
+    // oppgave 6 
+
+
+    public static int g(int a, int b)
+    {
+        return b == 0 ? a : g(b, a % b);
+    }
+
+    public static void rotasjon(char[] a, int k)
+    {
+        int n = a.length;
+        if (n < 2) return;
+        if ((k %= n) < 0) k += n;
+
+        int s = g(n, k);
+
+        for (int m = 0; m < s; m++)
+        {
+            char verdi = a[m];
+
+            for (int i = m - k, j = m; i != m; i -= k)
+            {
+                if (i < 0) i += n;
+                a[j] = a[i];
+                j = i;
+            }
+
+            a[m + k] = verdi;
+        }
+    }
+
+}
+
 
     // dette er oppgave10
     public  static boolean innhold(String n,String m) {
