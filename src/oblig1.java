@@ -5,8 +5,11 @@ public class oblig1 {
         char[] a = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H','I', 'J'};
         char[] b = oblig1.rotasjon(a);
         int [] c={31,30,11,10,20,5,8};// tabellen til oppgave1
-        String n="ckkbbb";//det første ord for oppgave10
+        String n="ckbbbbb";//det første ord for oppgave10
         String m="smbckkb";// det andre ord for oppgave10;
+
+        int[] b = {1, 1, 1, 2, 2, 2, 3, 4, 5, 6, 7, 8, 8, 8, 8, 9,10, 10, 10, 10}; //tabell for å teste oppgave 3
+        System.out.println("Tabellen har "+antallUlikeUsortert(b)+" ulike verdier."); //utskrift for tabellen i oppgave 3, vi får null om  tabellen er tom
 
         System.out.println(" Tabellen verdier byttet"+" "+ombyttinger(c)+" "+"gang/er");
         System.out.println(" Den maks verdien er:"+maks(c));
@@ -35,6 +38,27 @@ public class oblig1 {
         return mv;
     }
 
+
+    // OPPGAVE 3
+    public static int antallUlikeUsortert(int[] a) {
+        if (a.length == 0) {
+            return 0;
+        } else {
+            int like = 0;
+            int value = 0;
+            for (int i = 0; i < a.length; i++) {
+                int j = 0;
+                value = a[i];
+                for (; j < i; j++) {
+                    if (a[j] == value)
+                        break;
+                }
+                if (j == i)
+                    like++;
+            }
+            return like;
+        }
+    }
 
 //dette telles hvor mange ganger verdiene i tabellen byttet
     public static int ombyttinger(int[] c) {
